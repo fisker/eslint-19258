@@ -3,11 +3,6 @@ import tsParser from '@typescript-eslint/parser'
 
 export default [
   {
-    rules: {
-      'no-trailing-spaces': 'off',
-    }
-  },
-  {
     plugins: {
       prettier,
     },
@@ -16,8 +11,8 @@ export default [
     },
     files: ['sdk.gen.ts'],
     rules: {
-      'prettier/prettier': 'error',
       'no-trailing-spaces': 'error',
+      'prettier/prettier': 'error',
     }
   }
 ]
